@@ -1,1 +1,1 @@
-# Tiny image preporcessing libray
+# Tiny image preporcessing library
