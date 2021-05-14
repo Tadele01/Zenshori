@@ -55,13 +55,21 @@ class Zenshori:
         
     
     def inspect(self):
+        print("Preprocessing Steps")
+        separator = "====================================================================="
+        table = '---------------------------------------------------------------------'
+        print(table)
+        print('{0: <40}'.format("Processing functions"), "Parameters", sep='')
+        print(table)
         head = self.graph
         while head != None:
-            print(head.function_name, head.params)
-            for val in head.params:
-                print(head.function(val))
+            print('{0: <40}'.format(head.function_name), end='')
+            print(head.params, sep='\n')
             head = head.next
-
+            print(separator)
+        print(table)
+            
+        
 
 
 
@@ -70,7 +78,7 @@ zen = Zenshori('trial')
 import math
 zen.pipeline({abs:[1, 2, 3] , math.ceil:[12, 13, 14]})
 
-
+zen.inspect()
 
 
 
