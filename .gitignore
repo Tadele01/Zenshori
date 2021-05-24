@@ -1,6 +1,6 @@
 *.pyc
 *.pyo
-*.__pycache__
+*__pycache__
 Fundus_Train_Val_Data
 trial
 preproceesed*
